@@ -120,9 +120,8 @@
             const form = new FormData(this);
             const jsonData = {};
             form.forEach((value, key) => jsonData[key] = value);
-        
             try {
-                const response = await fetch("https://sheetdb.io/api/v1/20ouvn2xsv3z1", {
+                const response = await fetch("", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(jsonData)
